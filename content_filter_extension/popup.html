@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 250px; font-family: sans-serif; padding: 15px; }
+    h3 { margin-top: 0; }
+    .option { margin-bottom: 10px; }
+    button { width: 100%; padding: 10px; background: #000; color: #fff; border: none; cursor: pointer; border-radius: 5px;}
+    button:hover { opacity: 0.8; }
+    #status { color: green; font-size: 12px; margin-top: 10px; height: 15px; }
+  </style>
+</head>
+<body>
+  <h3>Filter Settings</h3>
+  <p>What should be hidden?</p>
+  
+  <div class="option">
+    <input type="radio" id="both" name="filter" value="BOTH" checked>
+    <label for="both">Hide Both (Hate & Abuse)</label>
+  </div>
+
+  <div class="option">
+    <input type="radio" id="hate" name="filter" value="HATE">
+    <label for="hate">Hide Hate Only</label>
+  </div>
+
+  <div class="option">
+    <input type="radio" id="abuse" name="filter" value="ABUSE">
+    <label for="abuse">Hide Abuse Only</label>
+  </div>
+
+  <button id="save-btn">Save Settings</button>
+  <div id="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
